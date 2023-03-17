@@ -5,20 +5,20 @@
  *
  * Return: 0 Always
 */
- int main(void)
+int main(void)
 {
-	int num;
-	
-	for (num = 0; num <= 9; num++)
-	{
-		putchar((num % 10) + '0');
-	if (num == 9)
-		continue;
+int num;
 
-	putchar(',');
-	putchar(' ');
-	}
-	putchar('\n');
+for (num = 0; num <= 9; num++)
+{
+putchar((num % 10) + '0');
+if (num == 9)
+	continue;
 
-	return (0);
+putchar(',');
+putchar(' ');
+}
+putchar('\n');
+
+return (0);
 }
