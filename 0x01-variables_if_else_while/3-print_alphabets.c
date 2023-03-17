@@ -13,6 +13,7 @@ int main(void)
 
 	char low;
 	char high;
+
 	for (low = 'a'; low <= 'z'; low++)
 	putchar(low);
 
