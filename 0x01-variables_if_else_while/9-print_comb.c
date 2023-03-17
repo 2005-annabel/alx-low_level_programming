@@ -3,23 +3,22 @@
 /**
  * main - prints all possible combinations of single digit numbers.
  *
- * Return: 0 on success
- */
-
-int main(void)
+ * Return: 0 Always
+*/
+ int main(void)
 {
-	int n, d;
-	d = 0;
+	int num;
+	
+	for (num = 0; num <= 9; num++)
+	{
+		putchar((num % 10) + '0');
+	if (num == 9)
+		continue;
 
-	for (n = '0'; d < 10; n++)
-	{
-	putchar(n + '0');
-	if (n < 9)
-	{
 	putchar(',');
-	putchar(32);
-	}
+	putchar(' ');
 	}
 	putchar('\n');
+
 	return (0);
 }
