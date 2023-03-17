@@ -8,9 +8,10 @@
 
 int main(void)
 {
-	int n;
+	int n, d;
+	d = 0;
 
-	for (n = '0'; d < '10'; n++)
+	for (n = '0'; d < 10; n++)
 	{
 	putchar(n + '0');
 	if (n < 9)
@@ -19,6 +20,6 @@ int main(void)
 	putchar(32);
 	}
 	}
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
