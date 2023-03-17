@@ -1,3 +1,8 @@
+/*
+*File: 5-print_numbers.c
+*Auth: Annabel Amondi
+*/
+
 #include <stdio.h>
 
 /**
@@ -11,8 +16,8 @@ int main(void)
 
 	for (num = 0; num < 10; num++)
 	printf("%d", num);
+
 	printf("\n");
-	
 
 	return (0);
 }
