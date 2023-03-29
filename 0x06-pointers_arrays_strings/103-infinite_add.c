@@ -45,7 +45,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (*(n1 + j) != '\0')
 		j++;
 	i--;
-	i--;
 	j--;
 	if (j >= size_r || i >= size_r)
 		return (0);
