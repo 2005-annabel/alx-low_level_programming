@@ -1,14 +1,16 @@
-C = gcc
+#rules: 
+#all, clean, fclean, oclean, re
+#variable:
+#CC, SRC, OBJ, NAME, RM, CFLAGS
+CC = gcc
 SRC = main.c school.c
-OBJ = $(patsubst %.c, %.o, $(SRC))
-NAME = school
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
+OBJ = $(SRC:.c=.o)
+	NAME = school
+	RM = rm -f
+	CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	        $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+all: $(OBJ)
+	        $(CC) $(OBJ) -o $(NAME)
 
 clean:
 	        $(RM) *~ $(NAME)
