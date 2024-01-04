@@ -2,6 +2,8 @@
 """function that returns perimeter of the island described in grid
 grid is the list of integers
 """
+
+
 def island_perimeter(grid):
     """Returns the perimeter of the island.
     grid represents water by 0 and land by 1.
@@ -23,4 +25,3 @@ def island_perimeter(grid):
                     edges += 1
 
     return size * 4 - edges * 2
-
